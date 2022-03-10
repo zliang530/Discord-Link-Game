@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="stylesheet" href="/css/nav.css" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Shizuru&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/link-mafia.png" />
+    
+    <title>Discord Link</title>
+
+</head>
+<body>
+    <%- include('./components/nav.ejs') %>
+    <div class="game">
+        <div >
+            <div class="health">
+                <div>&hearts;</div> 
+                <div>&hearts;</div> 
+                <div>&hearts;</div> 
+            </div>
+            <div class="col">
+                <div>Timer:</div> 
+                <div class="display">00 : 00 : 000</div>
+            </div>
+            <div class="col">
+                <div>Link:</div> 
+                <div class="display">???</div>
+            </div>
+            <div class="col">
+                <label>https://discord.gg/ </label> 
+                <input class="display input" type="text" disabled>
+            </div>
+            <input type=button class="start-game" value="&#9658;">
+
+        </div>
+    </div>
+
+    <div class="modal-box">
+        <form class="modal" method="post" action="/leaderboard">
+            <span class="modal-close">X</span>
+            <div id="modal-title">Your Score</div>
+            <div class="modal-col">
+                <div class="modal-header">Time:</div> 
+                <input  name="time" type="text" class="modal-content modal-time" readonly></input>
+            </div>
+            <div class="modal-col">
+                <div class="modal-header">Name:</div> 
+                <input name="name" class="modal-content" type="text">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script type="text/javascript" src="/js/home.js"></script>
+</body>
+
+</html>
