@@ -9,7 +9,7 @@ function _generateLink(){
     var num = ['0','1','2','3','4','5','6','7','8','9',]
 
     var charCount = Math.round(Math.random() * (8 - 7) + 7)
-    var selectChar;
+    var selectChar; 
     var link = "";
     for (var i=0; i<charCount; i++){
         
