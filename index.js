@@ -16,7 +16,7 @@ const apiLimiter = rateLimit({
 
 app.use(apiLimiter)
 
-setInterval(function(){
+/*setInterval(function(){
   let db = new sqlite3.Database('db/dlg.db', (err) => {
     if (err) {
       return console.error(err.message);
@@ -28,7 +28,7 @@ setInterval(function(){
     }
   })
   db.close();
-}, 86400000); 
+}, 86400000);*/
 
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))

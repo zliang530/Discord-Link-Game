@@ -5,7 +5,7 @@
 }
 
 body {
-    background: url("../img/discord-wallpaper.jpg");
+    background: url("../img/discord-wallpaper.jpg") no-repeat center center fixed;
     height: 100vh;
     background-size: cover;
 }
@@ -14,8 +14,8 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    padding: 100px;
+    align-items: center;
+    margin-top: 60px;
 }
 
 .leaderboard {
@@ -34,7 +34,6 @@ body {
     text-decoration: underline;
     line-height: 40px;
     text-underline-offset: 2px;
-
 }
 
 .col{

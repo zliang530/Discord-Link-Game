@@ -1,4 +1,10 @@
 const leaderboard = document.querySelector(".leaderboard")
+const burger = document.querySelector(".burger");
+const nav = document.querySelector(".nav-links");
+
+burger.addEventListener("click", e=>{
+    nav.classList.toggle("active")
+})
 
 async function getLeaderboard(){
     const response = await fetch("/leaderboard/10")

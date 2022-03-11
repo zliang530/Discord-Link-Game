@@ -17,11 +17,17 @@ var modalTime = document.querySelector(".modal-time");
 var modalContainer = document.querySelector(".modal-box");
 var modalSubmit = document.querySelector(".modal > button");
 var modalName = document.querySelectorAll(".modal-content")[1];
+var burger = document.querySelector(".burger");
+var nav = document.querySelector(".nav-links");
 
 // keep track of whether the game has been restarted yet
 restart = false;
 // ID which uniquely identifies the interval to be removed later
 intervalId = 0;
+
+burger.addEventListener("click", e=>{
+    nav.classList.toggle("active")
+})
 
 modalClose.addEventListener("click", e =>{
     modalContainer.classList.remove("active");
