@@ -16,7 +16,6 @@ router.get('/', (req, res) =>{
 })
 
 router.get('/:num' , (req, res) => {
-  
   db.all(`select name, time from leaderboard
           order by time asc
           limit 10`,
